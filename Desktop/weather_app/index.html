@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Code-Verse Weather</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <main class="app">
+        <h1>Weather <span>live from an API</span></h1>
+
+        <form id="searchForm">
+            <input
+                id="cityInput"
+                type="text"
+                placeholder="Type a city… e.g. Pune"
+                autocomplete="off"
+                aria-label="City name"
+            >
+            <button type="submit">Search</button>
+        </form>
+
+        <p id="message" role="status" aria-live="polite"></p>
+
+        <section id="card" class="card hidden" aria-live="polite">
+            <h2 id="place"></h2>
+            <p class="temp"><span id="temp"></span>°C</p>
+            <p class="wind">Wind <span id="wind"></span> km/h</p>
+            <p class="coords" id="coords"></p>
+        </section>
+    </main>
+</body>
+</html>
